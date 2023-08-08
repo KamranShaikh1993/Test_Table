@@ -1,16 +1,10 @@
 import streamlit as st
 
-
 import pickle
 import requests
-
 import pandas as pd
 import pdfplumber 
-
-
-
 import requests
-
 
 # import streamlit_pandas as sp
 
@@ -178,22 +172,9 @@ def load_data():
         print('df')
         print(df.head(10))
 
-
-    return (df)        
+    # return (df)        
         
 #+++++++++++++++++++++++++++++++++++++==============================================================+++++++++++++++++++++
-
-
-
-
-
-    
-    
-
-
-
-
-
 
 if st.button("Satrt") :
 
