@@ -1,4 +1,7 @@
 pdfminer.six==20221105
 Pillow>=9.1
 pypdfium2>=4.18.0
+
+!pip install pdfplumber
+
 pdfplumber==0.1.2
