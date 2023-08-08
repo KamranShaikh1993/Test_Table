@@ -135,45 +135,57 @@ def load_data():
                                                     else:
                                                         print('df12')
                                                         print(df12.head())
+                                                        df_t = df12
                                                 else:
                                                     print('df11')
                                                     print(df11.head())
+                                                     df_t = df11
                                             else:
                                                 print('df10')
                                                 print(df10.head())
+                                                 df_t = df10
                                         else:
                                             print('df9')
                                             print(df9.head(14))
+                                             df_t = df9
                                     else:
                                         print('df8')
                                         print(df8.head())
+                                        df_t = df8
                                 else:
                                     print('df7')
                                     print(df7.head())
+                                    df_t = df7
                             else:
                                 print('df6')
                                 print(df6.head())
+                                df_t = df6
                         else:
                             print('df5')
                             print(df5.head())
+                            df_t = df5
                     else:
                         print('df4')
                         print(df4.head())
+                        df_t = df4
                 else:
                         print('df3')
                         print(df3)
+                        df_t = df3
             else:
                 print('df2')
                 print(df2.head())
+                df_t = df2
         else:
             print('df1')
             print(df1.head())
+            df_t = df1
     else:
         print('No')
         print('df')
         print(df.head(10))
 
-    return (df)        
+    return (df_t)        
         
 #+++++++++++++++++++++++++++++++++++++==============================================================+++++++++++++++++++++
 
