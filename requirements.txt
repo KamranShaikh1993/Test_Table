@@ -3,4 +3,4 @@ Pillow>=9.1
 pypdfium2>=4.18.0
 
 pdfplumber
-pdfplumber==0.1.2
+#pdfplumber==0.1.2
