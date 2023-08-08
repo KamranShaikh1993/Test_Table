@@ -191,5 +191,5 @@ def load_data():
 
 if st.button("Satrt") :
 
-    df1 = load_data()
-    st.write(df1)
+    df_ld = load_data()
+    st.write(df_ld)
