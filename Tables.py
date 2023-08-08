@@ -19,13 +19,13 @@ def load_data():
     response = requests.get(url)
     with open('TEST_NEW.pdf', 'wb') as f:
         f.write(response.content)
-    with open('TEST_NEW.pdf', 'rb') as f:
-        pdf_reader = PdfReader(f)
-        num_pages = len(pdf_reader.pages)
-        text = ''
-        for page_num in range(num_pages):
-            page = pdf_reader.pages[page_num]
-            text += page.extract_text()
+    # with open('TEST_NEW.pdf', 'rb') as f:
+    #     pdf_reader = PdfReader(f)
+    #     num_pages = len(pdf_reader.pages)
+    #     text = ''
+    #     for page_num in range(num_pages):
+    #         page = pdf_reader.pages[page_num]
+    #         text += page.extract_text()
 
 
     pdf = pdfplumber.open("TEST_NEW.pdf")
