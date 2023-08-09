@@ -201,8 +201,8 @@ def load_data(url):
 #     st.write(df_ld)
 
 
-st.write("# PDF to DataFrame Extraction")
-link = st.text_area("Link")
+st.write("# :blue[PDF to DataFrame Extraction]")
+link = st.text_area(":blue[Link]")
 
 if st.button("Extract"):
     result_1 = load_data(link)
