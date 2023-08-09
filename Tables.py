@@ -15,6 +15,7 @@ st.cache(allow_output_mutation = True)
 def load_data(url):
 
     global df_t
+    
 
     url_1 = url
     # url = "https://nupco.com/wp-content/uploads/2023/02/NPT0003-23-WEBSITE-ANNOUNCEMENT-1.pdf"
