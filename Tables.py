@@ -37,6 +37,7 @@ def load_data():
     df = pd.DataFrame(table[1:], columns=table[0])
 
     df.head(11)
+    df_t = df
 
     if None in df.columns or df.isnull().values.any() == True:
         print('yes_df')
@@ -170,7 +171,7 @@ def load_data():
                         df_t = df4
                 else:
                         print('df3')
-                        print(df3)
+                        print(df3.head())
                         df_t = df3
             else:
                 print('df2')
@@ -183,9 +184,10 @@ def load_data():
     else:
         print('No')
         print('df')
-        print(df.head(10))
+        print(df_t.head(10))
+        
+    return (df_t) 
 
-        return (df_t)        
         
 #+++++++++++++++++++++++++++++++++++++==============================================================+++++++++++++++++++++
 
