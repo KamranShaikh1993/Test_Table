@@ -14,6 +14,8 @@ st.cache(allow_output_mutation = True)
 
 def load_data():
 
+    global df_t
+
     url = "https://nupco.com/wp-content/uploads/2023/02/NPT0003-23-WEBSITE-ANNOUNCEMENT-1.pdf"
     # url = "file:///C:/Users/kamran-%20khan/Kami_Practice/O_TEST_C_TST_R/OCR_PDF/NPT-0064-22-ITEM-LIST2.pdf"
 
