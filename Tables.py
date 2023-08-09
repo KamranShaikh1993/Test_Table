@@ -12,14 +12,15 @@ import requests
 st.cache(allow_output_mutation = True)
 
 
-def load_data():
+def load_data(url):
 
     global df_t
 
-    url = "https://nupco.com/wp-content/uploads/2023/02/NPT0003-23-WEBSITE-ANNOUNCEMENT-1.pdf"
+    url_1 = url
+    # url = "https://nupco.com/wp-content/uploads/2023/02/NPT0003-23-WEBSITE-ANNOUNCEMENT-1.pdf"
     # url = "file:///C:/Users/kamran-%20khan/Kami_Practice/O_TEST_C_TST_R/OCR_PDF/NPT-0064-22-ITEM-LIST2.pdf"
 
-    response = requests.get(url)
+    response = requests.get(url_1)
     with open('TEST_NEW.pdf', 'wb') as f:
         f.write(response.content)
     # with open('TEST_NEW.pdf', 'rb') as f:
@@ -193,7 +194,15 @@ def load_data():
         
 #+++++++++++++++++++++++++++++++++++++==============================================================+++++++++++++++++++++
 
-if st.button("Satrt") :
+# if st.button("Satrt") :
 
-    df_ld = load_data()
-    st.write(df_ld)
+#     df_ld = load_data(url)
+#     st.write(df_ld)
+
+
+st.write("# PDF to DataFrame Extraction")
+link = st.text_area("Link")
+
+if st.button("Extract"):
+    result_1 = load_data(link)
+    st.write(result_1)
